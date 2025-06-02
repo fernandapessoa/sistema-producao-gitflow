@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Ana Souza",
+    "curso": "Engenharia de Software",
+    "semestre": "5º Semestre"
+  },
+  {
+    "nome": "Carlos Lima",
+    "curso": "Sistemas de Informação",
+    "semestre": "3º Semestre"
+  },
+  {
+    "nome": "Juliana Mendes",
+    "curso": "Ciência da Computação",
+    "semestre": "7º Semestre"
+  },
+  {
+    "nome": "Lucas Pereira",
+    "curso": "Engenharia de Computação",
+    "semestre": "6º Semestre"
+  },
+  {
+    "nome": "Mariana Silva",
+    "curso": "Análise e Desenvolvimento de Sistemas",
+    "semestre": "4º Semestre"
+  },
+  {
+    "nome": "Rafael Costa",
+    "curso": "Engenharia de Software",
+    "semestre": "2º Semestre"
+  },
+  {
+    "nome": "Beatriz Martins",
+    "curso": "Ciência da Computação",
+    "semestre": "8º Semestre"
+  },
+  {
+    "nome": "Fernando Oliveira",
+    "curso": "Sistemas de Informação",
+    "semestre": "5º Semestre"
+  }
+]
