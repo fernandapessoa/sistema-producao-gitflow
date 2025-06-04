@@ -1,50 +1,91 @@
+/* Reset e base */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb); /* azul e roxo */
   margin: 0;
-  padding: 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
   text-align: center;
 }
 
-.container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
+/* Título */
 h1 {
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #2d2d6c;
 }
 
+/* Botão */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  padding: 12px 24px;
+  background-color: #6c5ce7;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.2s ease;
+  font-size: 1rem;
+  transition: all 0.25s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #5a4dcf;
+  transform: scale(1.03);
 }
 
+/* Campo de busca */
+#filtro {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  border: 2px solid #6c5ce7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: #333;
+}
+
+#filtro:focus {
+  border-color: #4e4cb8;
+  outline: none;
+  box-shadow: 0 0 10px rgba(76, 70, 214, 0.5);
+}
+
+/* Lista */
 ul#lista-alunos {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 0;
   text-align: left;
 }
 
+/* Itens da lista */
 ul#lista-alunos li {
-  background-color: #eef;
-  padding: 10px;
-  margin-bottom: 8px;
-  border-radius: 5px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  background-color: #dfe6fd;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+  color: #2c2c54;
+  transition: background-color 0.2s;
+}
+
+ul#lista-alunos li:hover {
+  background-color: #cfd8fc;
 }
