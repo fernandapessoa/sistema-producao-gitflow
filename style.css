@@ -28,7 +28,6 @@ h1 {
   color: #2d2d6c;
 }
 
-/* Botão estilo .btn */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -44,6 +43,7 @@ h1 {
 .btn:hover {
   background-color: #5a4dcf;
   transform: scale(1.03);
+
 }
 
 /* Botão HTML padrão */
@@ -59,6 +59,9 @@ button {
 
 button:hover {
   background-color: #777;
+}
+
+=======
 }
 
 /* Campo de busca */
@@ -99,6 +102,11 @@ ul#lista-alunos li {
   font-size: 1rem;
   color: #2c2c54;
   transition: background-color 0.2s;
+
+}
+
+ul#lista-alunos li:hover {
+  background-color: #cfd8fc;
 }
 
 ul#lista-alunos li:hover {
