@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lista de Alunos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -9,7 +9,13 @@
   <div class="container">
     
     <h1>Lista de Alunos</h1>
-    <input type="text" id="filtro" placeholder="Filtrar alunos..." />
+    <!-- Campo de busca para filtragem dinâmica -->
+    <input
+      type="text"
+      id="filtro"
+      placeholder="Buscar alunos por nome, curso ou semestre..."
+    />
+    
     <ul id="lista-alunos"></ul>
 
     <form id="form-aluno">

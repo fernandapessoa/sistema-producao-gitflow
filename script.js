@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error(error);
     });
 
-      
   document.getElementById('btn-exportar').addEventListener('click', () => {
     const jsonString = JSON.stringify(alunos, null, 2);
     const blob = new Blob([jsonString], { type: "application/json" });
@@ -81,5 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
   });
-
 });
