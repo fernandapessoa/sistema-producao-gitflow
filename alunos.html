@@ -7,6 +7,7 @@
 </head>
 <body>
   <div class="container">
+    
     <h1>Lista de Alunos</h1>
     <!-- Campo de busca para filtragem dinâmica -->
     <input
@@ -15,7 +16,17 @@
       placeholder="Buscar alunos por nome, curso ou semestre..."
     />
     <ul id="lista-alunos"></ul>
+
+    <form id="form-aluno">
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="text" id="curso" placeholder="Curso" required />
+      <input type="text" id="semestre" placeholder="Semestre" required />
+      <button type="submit">Adicionar Aluno</button>
+      <button type="button" id="btn-exportar">Exportar JSON</button>
+    </form>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
