@@ -94,3 +94,34 @@ ul#lista-alunos li:hover {
   margin-top: 20px;
   padding: 12px 24px;
 }
+
+.btn-voltar {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #6c5ce7;
+  border: 2px solid #6c5ce7;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #f3f3ff;
+  transform: scale(1.05);
+}
+
+
+.container .btn-voltar {
+  display: inline-block;
+  text-align: left;
+}
+
+.voltar-wrapper {
+  text-align: left;
+  margin-bottom: 20px;
+}
