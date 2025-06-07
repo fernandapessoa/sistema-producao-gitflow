@@ -1,7 +1,7 @@
 const lista = document.getElementById('lista-alunos');
 const filtro = document.getElementById('filtro');
 
-let alunos = []; // Armazena os dados originais
+let alunos = []; // Lista original
 
 function criarItemAluno(aluno) {
   const item = document.createElement('li');
@@ -33,12 +33,12 @@ function renderizarLista(filtroTexto = '') {
   }
 }
 
-// Atualiza a lista enquanto o usuário digita
+// Atualiza enquanto digita
 filtro.addEventListener('input', () => {
   renderizarLista(filtro.value);
 });
 
-// Carrega os dados dos alunos inicialmente
+// Carrega os dados
 fetch('alunos.json')
   .then(res => {
     if (!res.ok) throw new Error('Erro ao carregar arquivo');
@@ -46,9 +46,35 @@ fetch('alunos.json')
   })
   .then(data => {
     alunos = data;
-    renderizarLista(); // Exibe todos os alunos inicialmente
+    renderizarLista();
   })
   .catch(error => {
     lista.innerHTML = '<li style="font-style: italic;">Erro ao carregar dados.</li>';
     console.error(error);
   });
+
+// Função para baixar JSON filtrado
+function baixarJSON() {
+  const filtroTexto = filtro.value.toLowerCase();
+
+  const alunosFiltrados = alunos.filter(aluno => {
+    return (
+      aluno.nome.toLowerCase().includes(filtroTexto) ||
+      aluno.curso.toLowerCase().includes(filtroTexto) ||
+      aluno.semestre.toLowerCase().includes(filtroTexto)
+    );
+  });
+
+  const blob = new Blob([JSON.stringify(alunosFiltrados, null, 2)], {
+    type: 'application/json'
+  });
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'alunos-filtrados.json';
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById('baixar-json').addEventListener('click', baixarJSON);

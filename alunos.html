@@ -8,14 +8,23 @@
 <body>
   <div class="container">
     <h1>Lista de Alunos</h1>
-    <!-- Campo de busca para filtragem dinâmica -->
+    
+    <!-- Campo de busca -->
     <input
       type="text"
       id="filtro"
       placeholder="Buscar alunos por nome, curso ou semestre..."
     />
+
     <ul id="lista-alunos"></ul>
+
+    <!-- Botão no final -->
+    <div style="margin-top: 30px;">
+      <button id="baixar-json" class="btn">Baixar JSON</button>
+    </div>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
